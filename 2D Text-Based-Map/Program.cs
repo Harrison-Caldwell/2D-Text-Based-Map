@@ -8,6 +8,8 @@ namespace _2D_Text_Based_Map
 
         static char Border = Convert.ToChar(175);
 
+        static int SetScale;
+
         
 
         static void AsciiSucks()
@@ -45,12 +47,12 @@ namespace _2D_Text_Based_Map
 
         static void DisplayMap(int scale)
         {
-            
-            
+           
            
             if (scale == 1)
             {
-               
+
+
                 for (int x = 0; x <= 9; x = x + 1)
                 {
                     Console.WriteLine();
@@ -109,9 +111,87 @@ namespace _2D_Text_Based_Map
                     Console.Write(Convert.ToChar(124));
                     for (int y = 0; y <= 29; y = y + 1)
                     {
+                        if (map[x, y] == '^')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            Console.BackgroundColor = ConsoleColor.Gray;
+
+                        }
+
+                        if (map[x, y] == '~')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.BackgroundColor = ConsoleColor.Blue;
+
+                        }
+
+                        if (map[x, y] == '*')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.BackgroundColor = ConsoleColor.Green;
+
+                        }
+
+                        if (map[x, y] == '@')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.Red;
+
+                        }
+
+                        if (map[x, y] == '!')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.BackgroundColor = ConsoleColor.Magenta;
+
+                        }
                         Console.Write(map[x, y]);
                         Console.Write(map[x, y]);
                     }
+                    Console.ResetColor();
+                    Console.Write(Convert.ToChar(124));
+                    Console.WriteLine();
+                    Console.Write(Convert.ToChar(124));
+                    for (int y = 0; y <= 29; y = y + 1)
+                    {
+                        if (map[x, y] == '^')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            Console.BackgroundColor = ConsoleColor.Gray;
+
+                        }
+
+                        if (map[x, y] == '~')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.BackgroundColor = ConsoleColor.Blue;
+
+                        }
+
+                        if (map[x, y] == '*')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.BackgroundColor = ConsoleColor.Green;
+
+                        }
+
+                        if (map[x, y] == '@')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.Red;
+
+                        }
+
+                        if (map[x, y] == '!')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.BackgroundColor = ConsoleColor.Magenta;
+
+                        }
+                        Console.Write(map[x, y]);
+                        Console.Write(map[x, y]);
+                    }
+                    Console.ResetColor();
                     Console.Write(Convert.ToChar(124));
                 }
             }
@@ -125,18 +205,138 @@ namespace _2D_Text_Based_Map
                     Console.Write(Convert.ToChar(124));
                     for (int y = 0; y <= 29; y = y + 1)
                     {
+                        if (map[x, y] == '^')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            Console.BackgroundColor = ConsoleColor.Gray;
+
+                        }
+
+                        if (map[x, y] == '~')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.BackgroundColor = ConsoleColor.Blue;
+
+                        }
+
+                        if (map[x, y] == '*')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.BackgroundColor = ConsoleColor.Green;
+
+                        }
+
+                        if (map[x, y] == '@')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.Red;
+
+                        }
+
+                        if (map[x, y] == '!')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.BackgroundColor = ConsoleColor.Magenta;
+
+                        }
                         Console.Write(map[x, y]);
                         Console.Write(map[x, y]);
                         Console.Write(map[x, y]);
                     }
+                    Console.ResetColor();
+                    Console.Write(Convert.ToChar(124));
+                    Console.WriteLine();
+                    Console.Write(Convert.ToChar(124));
+                    for (int y = 0; y <= 29; y = y + 1)
+                    {
+                        if (map[x, y] == '^')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            Console.BackgroundColor = ConsoleColor.Gray;
+
+                        }
+
+                        if (map[x, y] == '~')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.BackgroundColor = ConsoleColor.Blue;
+
+                        }
+
+                        if (map[x, y] == '*')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.BackgroundColor = ConsoleColor.Green;
+
+                        }
+
+                        if (map[x, y] == '@')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.Red;
+
+                        }
+
+                        if (map[x, y] == '!')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.BackgroundColor = ConsoleColor.Magenta;
+
+                        }
+                        Console.Write(map[x, y]);
+                        Console.Write(map[x, y]);
+                        Console.Write(map[x, y]);
+
+                    }
+                    Console.ResetColor();
+                    Console.Write(Convert.ToChar(124));
+                    Console.WriteLine();
+                    Console.Write(Convert.ToChar(124));
+                    for (int y = 0; y <= 29; y = y + 1)
+                    {
+                        if (map[x, y] == '^')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGray;
+                            Console.BackgroundColor = ConsoleColor.Gray;
+
+                        }
+
+                        if (map[x, y] == '~')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkBlue;
+                            Console.BackgroundColor = ConsoleColor.Blue;
+
+                        }
+
+                        if (map[x, y] == '*')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkGreen;
+                            Console.BackgroundColor = ConsoleColor.Green;
+
+                        }
+
+                        if (map[x, y] == '@')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                            Console.BackgroundColor = ConsoleColor.Red;
+
+                        }
+
+                        if (map[x, y] == '!')
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                            Console.BackgroundColor = ConsoleColor.Magenta;
+
+                        }
+                        Console.Write(map[x, y]);
+                        Console.Write(map[x, y]);
+                        Console.Write(map[x, y]);
+                    }
+                    Console.ResetColor();
                     Console.Write(Convert.ToChar(124));
                 }
             }
 
-           if (GameOver == false)
-            {
-                GameOver = true;
-            }
 
             Console.ReadKey(true);
             
@@ -149,9 +349,27 @@ namespace _2D_Text_Based_Map
         {
             char[,] map = new char[10, 30]; 
 
+            
+
             while(GameOver == false)
             {
-                DisplayMap(1);
+                if (Console.ReadKey(true).Key == ConsoleKey.Escape)
+                {
+                    GameOver = true;
+                }
+                if (Console.ReadKey(true).Key == ConsoleKey.D1)
+                {
+                    SetScale = 1;
+                }
+                if (Console.ReadKey(true).Key == ConsoleKey.D2)
+                {
+                    SetScale = 2;
+                }
+                if (Console.ReadKey(true).Key == ConsoleKey.D3)
+                {
+                    SetScale = 3;
+                }
+                DisplayMap(SetScale);
             }
         }
     }
